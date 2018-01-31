@@ -38,6 +38,13 @@ class ViewController: UIViewController {
           greetingLbl.text = textEntered
      }
      
+     
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          
+          let vc = segue.destination as! AViewController
+          vc.str = textEntered
+     }
+     
      override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()
           // Dispose of any resources that can be recreated.

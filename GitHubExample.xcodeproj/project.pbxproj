@@ -14,6 +14,7 @@
 		985A25BC2021ADF300D503BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985A25BA2021ADF300D503BA /* LaunchScreen.storyboard */; };
 		985A25C72021ADF300D503BA /* GitHubExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985A25C62021ADF300D503BA /* GitHubExampleTests.swift */; };
 		985A25D22021ADF300D503BA /* GitHubExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985A25D12021ADF300D503BA /* GitHubExampleUITests.swift */; };
+		985A25E02021B4F200D503BA /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985A25DF2021B4F200D503BA /* AViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		985A25CD2021ADF300D503BA /* GitHubExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		985A25D12021ADF300D503BA /* GitHubExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubExampleUITests.swift; sourceTree = "<group>"; };
 		985A25D32021ADF300D503BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		985A25DF2021B4F200D503BA /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				985A25B12021ADF200D503BA /* AppDelegate.swift */,
 				985A25B32021ADF300D503BA /* ViewController.swift */,
+				985A25DF2021B4F200D503BA /* AViewController.swift */,
 				985A25B52021ADF300D503BA /* Main.storyboard */,
 				985A25B82021ADF300D503BA /* Assets.xcassets */,
 				985A25BA2021ADF300D503BA /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				985A25B42021ADF300D503BA /* ViewController.swift in Sources */,
+				985A25E02021B4F200D503BA /* AViewController.swift in Sources */,
 				985A25B22021ADF200D503BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
