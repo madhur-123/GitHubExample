@@ -36,20 +36,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeA-cE-tAb">
+                                <rect key="frame" x="162.5" y="318" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="btnSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CD-I2-iVY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXR-oW-DKs">
+                                <rect key="frame" x="16" y="435" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XrM-i4-v8I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xeA-cE-tAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0QU-ep-zgh"/>
                             <constraint firstItem="wup-DF-tju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Xy-TZ-ksu"/>
                             <constraint firstItem="wup-DF-tju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="6CH-Jq-16Q"/>
                             <constraint firstItem="dbg-AG-j5w" firstAttribute="top" secondItem="wup-DF-tju" secondAttribute="bottom" constant="55" id="6Gq-Dz-9qW"/>
+                            <constraint firstItem="qXR-oW-DKs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9dG-7h-C63"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qXR-oW-DKs" secondAttribute="trailing" constant="16" id="RrF-gp-n66"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbg-AG-j5w" secondAttribute="trailing" constant="16" id="Tzz-TE-i7Q"/>
+                            <constraint firstItem="qXR-oW-DKs" firstAttribute="top" secondItem="xeA-cE-tAb" secondAttribute="bottom" constant="87" id="VJD-7w-Gcr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wup-DF-tju" secondAttribute="trailing" constant="16" id="c2v-3K-ZCI"/>
                             <constraint firstItem="dbg-AG-j5w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hcg-ri-Ypb"/>
+                            <constraint firstItem="xeA-cE-tAb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lbZ-PK-gfU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="K3z-kd-Toq"/>
                     <connections>
+                        <outlet property="greetingLbl" destination="qXR-oW-DKs" id="HyV-oy-bSs"/>
                         <outlet property="randomText" destination="dbg-AG-j5w" id="dgl-Pa-84X"/>
                     </connections>
                 </viewController>

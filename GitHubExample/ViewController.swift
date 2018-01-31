@@ -12,15 +12,31 @@ class ViewController: UIViewController {
 
      @IBOutlet weak var randomText: UITextField!
     
+     @IBOutlet weak var greetingLbl: UILabel!
+     
+     var textEntered = String()
+     
+     
+     
+     
      
      override func viewDidLoad() {
           super.viewDidLoad()
 
-     
-          let textEntered = randomText.text
-          print("Random Text Entered is :    ", textEntered!)
+          greetingLbl.isHidden = true
      }
 
+     
+     @IBAction func btnSubmit(_ sender: UIButton) {
+          
+          greetingLbl.isHidden = false
+
+          textEntered = randomText.text!
+          
+          print("Random Text Entered is :    ", textEntered)
+
+          greetingLbl.text = textEntered
+     }
      
      override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()
